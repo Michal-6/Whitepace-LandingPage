@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks.">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="./favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <title>Whitespace</title>
+</head>
+
+<body>       
+        <nav class="bg-primary1 text-secondary3 2xl:px-220px lg:px-32px md:px-20px sm:px-16px py-16px flex items-center">
+            <a href=""><img src="./logo.png" alt="logo" class="md:w-191px md:h-34px sm:w-134px sm:h-24px"></a>
+            <div class="flex ml-auto gap-60px">
+                <div class="hidden xl:flex gap-32px items-center font-DMSans text-18px "  x-data="{dropdownOpen:false}">
+                </div>
+                <div class="flex font-InterMedium text-18px">
+                    <div class="lg:flex sm:hidden">
+                        <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-secondary1 text-primary1 px-40px py-16px rounded-lg mr-24px">Login</span></button>
+                        <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center">Try Whitespace free<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+                    </div>
+                    <button id="menu" onclick="hamburger()" class="hamburgerbtn"><img class="lg:hidden flex self-center h-24px ml-20px" src="./Icons/hum-menu.png" alt="menu button"></button>
+                    <div class="hamburger">
+                        <div id="myhamburger" class="hamburger-content hidden absolute w-full left-0px top-100px">
+                            <div class="bg-primary1">
+                            </div>
+                            <div class="bg-primary1 lg:hidden sm:block flex flex-col">
+                                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-secondary1 text-primary1 px-40px py-16px rounded-lg mr-24px">Login</span></button>
+                                <br>
+                                <br>
+                                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center">Try Whitespace free<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+                            </div>
+                            <hr class="w-full">        
+                        </div>
+                        <script>
+                                function hamburger() {
+                                  document.getElementById("myhamburger").classList.toggle("hidden");
+                                }                      
+                                // Close the dropdown if the user clicks outside of it
+                                window.onclick = function(event) {
+                                  if (!event.target.matches('.hamburgerbtn')) {
+                                    var dropdowns = document.getElementsByClassName("hamburger-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                      var openDropdown = dropdowns[i];
+                                      if (!openDropdown.classList.contains('hidden')) {
+                                        openDropdown.classList.remove('hidden');
+                                      }
+                                    }
+                                  }
+                                }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-primary1 bg-[url('/Images/Element1.png')] bg-center bg-no-repeat items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-0px sm:gap-100px">
+            <div class="text-secondary3">
+                <div class="pb-60px flex flex-col gap-24px 2xl:w-656px xl:w-691px lg:w-auto">
+                    <span class="font-InterBold lg:text-64px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Get More Done with whitepace</span>
+                    <span class="font-InterRegular text-18px">Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center">Try Whitespace free<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+            <img class="w-full h-auto lg:px-0px md:px-88px" src="./Images/Image1.png" alt="">
+        </section>
+
+        <section class="lg:bg-[url('/Images/Element2.png')] sm:bg-[url('/Images/Element2b.png')] lg:bg-left230px sm:bg-left-130px bg-no-repeat items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-100px sm:gap-60px">
+            <div>
+                <div class="pb-60px flex flex-col gap-24px 2xl:w-656px xl:w-691px lg:w-auto text-black">
+                    <span class="font-InterBold lg:text-72px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Project Management</span>
+                    <span class="font-InterRegular text-18px">Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center text-secondary3">Get Started<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+            <img class="w-full h-auto lg:px-0px md:px-88px" src="./Images/Image2.png" alt="">
+        </section>
+
+        <section class="items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col-reverse lg:gap-100px sm:gap-60px">
+            <img class=" w-full h-auto lg:px-0px md:px-88px" src="./Images/Image3.png" alt="">
+            <div>
+                <div class="pb-60px flex flex-col gap-24px 2xl:w-656px xl:w-562px lg:w-auto text-black">
+                    <span class="font-InterBold lg:text-72px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Work together</span>
+                    <span class="font-InterRegular text-18px">With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.</span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center text-secondary3">Try it now<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+        </section>
+
+        <section class="bg-primary1 items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-0px sm:gap-100px">
+            <!--<img class="" src="./Images/Element1.png">-->
+            <div class="text-secondary3">
+                <div class="pb-60px flex flex-col gap-24px 2xl:w-656px xl:w-691px lg:w-auto">
+                    <span class="font-InterBold lg:text-64px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Use as Extension</span>
+                    <span class="font-InterRegular text-18px">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+                    </span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center">Let’s Go<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+            <img class="w-full h-auto lg:px-0px md:px-88px" src="./Images/Image4.png" alt="">
+        </section>
+
+        <section class="items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col-reverse lg:gap-100px sm:gap-60px">
+            <img class=" w-full h-auto lg:px-0px md:px-88px" src="./Images/Image5.png" alt="">
+            <div>
+                <div class="pb-60px flex flex-col gap-24px 2xl:w-656px xl:w-562px lg:w-auto text-black">
+                    <span class="font-InterBold lg:text-72px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Customise it to your needs</span>
+                    <span class="font-InterRegular text-18px">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center text-secondary3">Let’s Go<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+        </section>
+
+        <section class="items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center flex-col lg:gap-100px sm:gap-60px">
+           <div class="text-center flex flex-col w-full">
+                <span class=" font-InterBold lg:text-72px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Choose Your Plan</span>
+                <span class="font-InterRegular text-18px">Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</span>
+           </div>
+
+            <div class="lg:flex sm:hidden flex-row content-center items-center gap-32px w-full">
+                <div class="box-border flex flex-col content-center items-start px-44px py-40px gap-25px border border-secondary1 rounded-18px">
+                    <div class="flex flex-col items-start gap-25px">
+                        <span class="text-black font-InterSemiBold text-24px">Free</span>
+                        <span class="text-black font-InterBold text-36px">$0</span>
+                        <span class="text-black font-InterMedium text-18px">Capture ideas and find them quickly</span>
+                    </div>
+                    <div class="flex flex-col items-start gap-28px">
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Sync unlimited devices</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">10 GB monthly uploads</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">200 MB max. note size</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Customize Home dashboard and access extra widgets</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Connect primary Google Calendar account</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Add due dates, reminders, and notifications to your tasks</span>
+                    </div>
+                    <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300 flex flex-row content-center items-center px-40px py-16px border border-secondary1 rounded-lg text-black font-InterMedium text-16px">Get Started</button>
+                </div>
+                <div class="flex flex-col content-center items-start px-44px py-80px gap-25px bg-primary1 rounded-10px shadow-plan-shadow">
+                    <div class="flex flex-col items-start gap-25px text-secondary3">
+                        <span class="font-InterSemiBold text-24px">Personal</span>
+                        <span class="text-secondary1 font-InterBold text-36px">$11.99</span>
+                        <span class="font-InterMedium text-18px">Keep home and family on track</span>
+                    </div>
+                    <div class="flex flex-col items-start gap-28px text-secondary3">
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Sync unlimited devices</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">10 GB monthly uploads</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">200 MB max. note size</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Customize Home dashboard and access extra widgets</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Connect primary Google Calendar account</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Add due dates, reminders, and notifications to your tasks</span>
+                    </div>
+                    <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300 flex flex-row content-center items-center px-40px py-16px rounded-lg bg-primary2 text-secondary3 font-InterMedium text-16px">Get Started</button>
+                </div>
+                <div class="box-border flex flex-col content-center items-start px-44px py-40px gap-25px border border-secondary1 rounded-18px">
+                    <div class="flex flex-col items-start gap-25px">
+                        <span class="text-black font-InterSemiBold text-24px">Organization</span>
+                        <span class="text-black font-InterBold text-36px">$49.99</span>
+                        <span class="text-black font-InterMedium text-18px">Capture ideas and find them quickly</span>
+                    </div>
+                    <div class="flex flex-col items-start gap-28px">
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Sync unlimited devices</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">10 GB monthly uploads</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">200 MB max. note size</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Customize Home dashboard and access extra widgets</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Connect primary Google Calendar account</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Add due dates, reminders, and notifications to your tasks</span>
+                    </div>
+                    <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300 flex flex-row content-center items-center px-40px py-16px border border-secondary1 rounded-lg text-black font-InterMedium text-16px">Get Started</button>
+                </div>
+            </div>
+
+           <swiper-container class="lg:hidden sm:flex flex-row content-center items-center gap-32px w-full">
+                <swiper-slide class="box-border flex flex-col content-center items-start px-44px py-40px gap-25px border border-secondary1 rounded-18px">
+                    <div class="flex flex-col items-start gap-25px">
+                        <span class="text-black font-InterSemiBold text-24px">Free</span>
+                        <span class="text-black font-InterBold text-36px">$0</span>
+                        <span class="text-black font-InterMedium text-18px">Capture ideas and find them quickly</span>
+                    </div>
+                    <div class="flex flex-col items-start gap-28px">
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Sync unlimited devices</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">10 GB monthly uploads</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">200 MB max. note size</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Customize Home dashboard and access extra widgets</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Connect primary Google Calendar account</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Add due dates, reminders, and notifications to your tasks</span>
+                    </div>
+                    <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300 flex flex-row content-center items-center px-40px py-16px border border-secondary1 rounded-lg text-black font-InterMedium text-16px">Get Started</button>
+                </swiper-slide>
+                <swiper-slide class="flex flex-col content-center items-start px-44px py-80px gap-25px bg-primary1 rounded-10px shadow-plan-shadow">
+                    <div class="flex flex-col items-start gap-25px text-secondary3">
+                        <span class="font-InterSemiBold text-24px">Personal</span>
+                        <span class="text-secondary1 font-InterBold text-36px">$11.99</span>
+                        <span class="font-InterMedium text-18px">Keep home and family on track</span>
+                    </div>
+                    <div class="flex flex-col items-start gap-28px text-secondary3">
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Sync unlimited devices</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">10 GB monthly uploads</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">200 MB max. note size</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Customize Home dashboard and access extra widgets</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Connect primary Google Calendar account</span>
+                        <span class="flex flex-row items-center gap-19px font-InterRegular text-16px"><img src="./Icons/checkmark2.png" alt="checkmark">Add due dates, reminders, and notifications to your tasks</span>
+                    </div>
+                    <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300 flex flex-row content-center items-center px-40px py-16px rounded-lg bg-primary2 text-secondary3 font-InterMedium text-16px">Get Started</button>
+                </swiper-slide>
+                <swiper-slide class="box-border flex flex-col content-center items-start px-44px py-40px gap-25px border border-secondary1 rounded-18px">
+                    <div class="flex flex-col items-start gap-25px">
+                        <span class="text-black font-InterSemiBold text-24px">Organization</span>
+                        <span class="text-black font-InterBold text-36px">$49.99</span>
+                        <span class="text-black font-InterMedium text-18px">Capture ideas and find them quickly</span>
+                    </div>
+                    <div class="flex flex-col items-start gap-28px">
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Sync unlimited devices</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">10 GB monthly uploads</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">200 MB max. note size</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Customize Home dashboard and access extra widgets</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Connect primary Google Calendar account</span>
+                        <span class="flex flex-row items-center gap-19px text-black font-InterRegular text-16px"><img src="./Icons/checkmark1.png" alt="checkmark">Add due dates, reminders, and notifications to your tasks</span>
+                    </div>
+                    <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300 flex flex-row content-center items-center px-40px py-16px border border-secondary1 rounded-lg text-black font-InterMedium text-16px">Get Started</button>
+                </swiper-slide>
+            </swiper-container>
+            
+        </section>
+
+        <section class="bg-primary1 text-center bg-[url('/Images/Element2.png')] bg-left bg-no-repeat items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-0px sm:gap-100px">
+            <div class="text-secondary3 w-full xl:text-center sm:text-left">
+                <div class="w-full pb-60px flex flex-col gap-24px">
+                    <span class="font-InterBold lg:text-64px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Your work, everywhere you are</span>
+                    <span class="font-InterRegular text-18px">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center">Try Taskey<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+        </section>
+
+        <section class="box-border items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-100px sm:gap-60px">
+            <div class="box-border">
+                <div class="box-border pb-60px flex flex-col gap-24px 2xl:w-656px xl:w-526px lg:w-auto text-black">
+                    <span class="font-InterBold lg:text-72px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">100% your data</span>
+                    <span class="font-InterRegular text-18px">The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.</span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center text-secondary3">Read more<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+            <img class="w-full h-auto lg:px-0px md:px-88px" src="./Images/Image6.png" alt="">
+        </section>
+
+        <section class="items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-0px sm:gap-100px">
+            <div class="text-black w-full text-center">
+                <div class="w-full pb-60px flex flex-col gap-24px">
+                    <span class="font-InterBold lg:text-64px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Our sponsors</span>
+                </div>
+                <div class="flex lg:flex-row sm:flex-col justify-between items-center xl:gap-100px lg:gap-0px sm:gap-100px">
+                    <img src="./Sponsors/Apple.png" alt="Apple">
+                    <img src="./Sponsors/Microsoft.png" alt="Microsoft">
+                    <img src="./Sponsors/Slack.png" alt="Slack">
+                    <img src="./Sponsors/Google.png" alt="Google">
+                </div>
+            </div>
+        </section>
+
+        <section class="box-border w-full bg-primary1 bg-[url('/Images/Element1b.png')] bg-center bg-no-repeat items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-100px sm:gap-100px">
+            <img class="w-full h-auto lg:px-0px md:px-88px" src="./Images/Image7.png" alt="">
+            <div class="text-secondary3">
+                <div class="box-border pb-60px flex flex-col gap-24px 2xl:w-656px xl:w-auto lg:w-auto">
+                    <span class="font-InterBold lg:text-64px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">Work with Your Favorite Apps Using whitepace</span>
+                    <span class="font-InterRegular text-18px">Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</span>
+                </div>
+                <button class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center">Read more<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+            </div>
+        </section>
+
+        <section class="items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-140px lg:text-left md:pb-100px sm:py-80px sm:text-center lg:flex-row sm:flex-col lg:gap-0px sm:gap-100px">
+            <div class="text-black w-full text-center">
+                <div class="w-full pb-60px flex flex-col gap-24px">
+                    <span class="font-InterBold lg:text-64px md:text-54px sm:text-36px md:leading-77px sm:leading-44px">What Our Clients Says</span>
+                </div>
+                
+                <div class="sm:hidden lg:flex flex-row items-center gap-32px">
+                    <div class="flex flex-col items-start px-40px py-60px gap-60px shadow-client-shadow rounded-10px text-left text-black">
+                        <div class="box-border flex flex-col items-start pb-40px gap-32px border-b border-b-black">
+                            <img src="./Icons/Quote1.png" alt="">
+                            <span class="font-InterRegular text-18px">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+                        </div>
+                        <div class="flex flex-row items-end gap-42px">
+                            <img src="./Avatars/Avater1.png" alt="">
+                            <div class="flex flex-col items-start gap-15px">
+                                <span class="font-InterSemiBold text-24px">Oberon Shaw, MCH</span>
+                                <span class="font-InterRegular text-16px">Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start px-40px py-60px gap-60px rounded-10px bg-primary2 text-left text-secondary3">
+                        <div class="box-border flex flex-col items-start pb-40px gap-32px border-b border-b-secondary3">
+                            <img src="./Icons/Quote2.png" alt="">
+                            <span class="font-InterRegular text-18px">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+                        </div>
+                        <div class="flex flex-row items-end gap-42px">
+                            <img src="./Avatars/Avater2.png" alt="">
+                            <div class="flex flex-col items-start gap-15px">
+                                <span class="font-InterSemiBold text-24px text-black">Oberon Shaw, MCH</span>
+                                <span class="font-InterRegular text-16px">Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start px-40px py-60px gap-60px rounded-10px bg-primary2 text-left text-secondary3">
+                        <div class="box-border flex flex-col items-start pb-40px gap-32px border-b border-b-secondary3">
+                            <img src="./Icons/Quote2.png" alt="">
+                            <span class="font-InterRegular text-18px">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+                        </div>
+                        <div class="flex flex-row items-end gap-42px">
+                            <img src="./Avatars/Avater3.png" alt="">
+                            <div class="flex flex-col items-start gap-15px">
+                                <span class="font-InterSemiBold text-24px text-black">Oberon Shaw, MCH</span>
+                                <span class="font-InterRegular text-16px">Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <swiper-container class="lg:hidden sm:flex flex flex-row items-center gap-32px">
+                    <swiper-slide class="flex flex-col items-start px-40px py-60px gap-60px shadow-client-shadow rounded-10px text-left text-black">
+                        <div class="box-border flex flex-col items-start pb-40px gap-32px border-b border-b-black">
+                            <img src="./Icons/Quote1.png" alt="">
+                            <span class="font-InterRegular text-18px">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+                        </div>
+                        <div class="flex flex-row items-end gap-42px">
+                            <img src="./Avatars/Avater1.png" alt="">
+                            <div class="flex flex-col items-start gap-15px">
+                                <span class="font-InterSemiBold text-24px">Oberon Shaw, MCH</span>
+                                <span class="font-InterRegular text-16px">Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="flex flex-col items-start px-40px py-60px gap-60px rounded-10px bg-primary2 text-left text-secondary3">
+                        <div class="box-border flex flex-col items-start pb-40px gap-32px border-b border-b-secondary3">
+                            <img src="./Icons/Quote2.png" alt="">
+                            <span class="font-InterRegular text-18px">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+                        </div>
+                        <div class="flex flex-row items-end gap-42px">
+                            <img src="./Avatars/Avater2.png" alt="">
+                            <div class="flex flex-col items-start gap-15px">
+                                <span class="font-InterSemiBold text-24px text-black">Oberon Shaw, MCH</span>
+                                <span class="font-InterRegular text-16px">Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="flex flex-col items-start px-40px py-60px gap-60px rounded-10px bg-primary2 text-left text-secondary3">
+                        <div class="box-border flex flex-col items-start pb-40px gap-32px border-b border-b-secondary3">
+                            <img src="./Icons/Quote2.png" alt="">
+                            <span class="font-InterRegular text-18px">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+                        </div>
+                        <div class="flex flex-row items-end gap-42px">
+                            <img src="./Avatars/Avater3.png" alt="">
+                            <div class="flex flex-col items-start gap-15px">
+                                <span class="font-InterSemiBold text-24px text-black">Oberon Shaw, MCH</span>
+                                <span class="font-InterRegular text-16px">Head of Talent Acquisition, North America</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </section>
+
+        <footer class="bg-primary1">
+            <div class="bg-primary1 items-center 2xl:px-220px lg:px-32px md:px-20px sm:px-16px 2xl:py-140px xl:py-100px lg:py-140px flex md:pt-80px lg:text-left md:pb-32px sm:pt-140px sm:pb-32px sm:text-center lg:flex-row sm:flex-col lg:gap-100px sm:gap-100px">
+                <div class=" flex flex-col items-start gap-100px isolate text-secondary3 w-full">
+                    <div class="flex lg:flex-row sm:flex-col justify-between items-start  xl:gap-100px lg:gap-auto sm:gap-100px w-full sm:text-center md:text-left">
+                        <div class="flex flex-col items-start gap-15px sm:w-full lg:w-200px">
+                            <img src="./logo.png" alt="">
+                            <span class="font-InterRegular text-18px">whitepace was created for the new ways we live and work. We make a better workspace around the world</span>
+                        </div>
+                        <div class="flex flex-col items-start gap-15px md:w-auto sm:w-full">
+                            <span class="font-InterBold text-18px sm:ml-auto sm:mr-auto md:mx-0px">Product</span>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Overview</a>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Pricing</a>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Customer stories</a>
+                        </div>
+                        <div class="flex flex-col items-start gap-15px md:w-auto sm:w-full">
+                            <span class="font-InterBold text-18px sm:ml-auto sm:mr-auto md:mx-0px">Resources</span>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Blog</a>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Guides & tutorials</a>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Help center</a>
+                        </div>
+                        <div class="flex flex-col items-start gap-15px text-center md:w-auto sm:w-full">
+                            <span class="font-InterBold text-18px sm:ml-auto sm:mr-auto md:mx-0px">Company</span>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">About us</a>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Careers</a>
+                            <a href="" class="font-InterRegular text-16px sm:ml-auto sm:mr-auto md:mx-0px hover:text-secondary1">Media kit</a>
+                        </div>
+                        <div class="flex flex-col items-start gap-23px md:w-220px sm:w-full sm:text-center">
+                            <span class="font-InterBold text-28px w-full md:text-left">Try It Today</span>
+                            <span class="font-InterRegular text-16px w-full md:text-left">Get started for free. Add your whole team as your needs grow.</span>
+                            <button  class="hover:shadow-2xl active:shadow-none transition-shadow ease-in-out duration-300 sm:ml-auto sm:mr-auto  md:mx-0px"><span class="bg-primary2 px-24px py-16px rounded-lg flex gap-10px items-center">Read more<img src="./Icons/right_arrow.png" alt="arrow right"></span></button>
+                        </div>
+                    </div>
+                    <hr class="w-full sm:hidden lg:flex">
+                    <div class="flex lg:flex-row sm:flex-col justify-between items-center lg:gap-60px sm:gap-20px w-full">
+                        <div class="flex md:flex-row sm:flex-col items-center md:gap-60px sm:m-20px md:w-full">
+                            <a href="" class="font-InterRegular text-16px hover:text-secondary1">Terms & privacy</a>
+                            <a href="" class="font-InterRegular text-16px hover:text-secondary1">Security</a>
+                            <a href="" class="font-InterRegular text-16px hover:text-secondary1">Status</a>
+                            <a href="" class="font-InterRegular text-16px hover:text-secondary1">©2021 Whitepace LLC.</a>
+                        </div>
+                        <hr class="w-full sm:flex lg:hidden">
+                        <div class="flex flex-row items-center gap-32px lg:w-auto md:w-full">
+                            <img src="./Icons/facebook.png" alt="">
+                            <img src="./Icons/twitter.png" alt="">
+                            <img src="./Icons/linkedin.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class=""><a href="https://www.freepik.com/free-vector/big-isolated-employee-working-office-workplace-flat-illustration_13744784.htm#query=metrics&position=41&from_view=keyword&track=sph">Images by jcomp</a> on Freepik</span>    
+        </footer>
+</body>
+</html> 
